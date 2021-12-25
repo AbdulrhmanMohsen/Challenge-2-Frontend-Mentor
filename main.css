@@ -1,0 +1,202 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+:root {
+    --Soft-blue: hsl(215, 51%, 70%);
+    --Cyan: hsl(178, 100%, 50%);
+    --Very-dark-blue-main-BG: hsl(217, 54%, 11%);
+    --Very-dark-blue-card-BG: hsl(216, 50%, 16%);
+    --Very-dark-blue-line: hsl(215, 32%, 27%);
+    --White: hsl(0, 0%, 100%);
+}
+
+body {
+    background-color: var(--Very-dark-blue-main-BG);
+    font-family: 'Outfit', sans-serif;
+}
+
+.container {
+    width: 22%;
+    background-color: var(--Very-dark-blue-card-BG);
+    display: flex;
+    margin: 100px auto;
+    border-radius: 15px;
+
+}
+
+@media (max-width:650px){
+    .container {
+        width: 80%;
+    }
+}
+
+.container .card .top-card {
+    display: flex;
+    justify-content: center;
+    margin: 30px 0px 20px 0px;
+}
+
+.container .card .top-card {
+    position: relative;
+}
+
+.container .card .top-card img {
+    width: 85%;
+    border-radius: 10px;
+    
+}
+
+.container .card .top-card .color {
+    background-color: var(--Cyan);
+    opacity: 0.5;
+    width: 85%;
+    position: absolute;
+    margin: 0 auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    border-radius: 10px;
+    display: none;
+}
+
+.container .card .top-card .view {
+    position: absolute;
+    width: auto;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    display: none;
+}
+
+.container .card .top-card:hover .view{
+    display: block;
+    cursor: pointer;
+}
+
+.container .card .top-card:hover .color {
+    display: block;
+    cursor: pointer;
+}
+
+
+
+.container .card .med-card .text,
+.text2 {
+    padding-right: 25px;
+    padding-left: 25px;
+
+}
+
+.container .card .med-card h2 {
+    color: var(--White);
+    font-weight: 600;
+    cursor: pointer;
+}
+
+
+.container .card .med-card h2:hover {
+    color: var(--Cyan);
+    padding: 0;
+    margin: 0;
+}
+
+.container .card .med-card .text p {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    font-weight: 300;
+    color: var(--Soft-blue);
+    font-size: 18;
+}
+
+.container .card .med-card .text2 {
+    display: flex;
+    justify-content: space-between;
+}
+
+.container .card .med-card .text2 .cont,
+.cont2 {
+    display: flex;
+    flex-direction: row;
+}
+
+.container .card .med-card .text2 img {
+    height: 22px;
+    margin-right: 7px;
+}
+
+.container .card .med-card .text2 p {
+    font-size: 18px;
+    font-weight: 400;
+
+}
+
+.container .card .med-card .text2 .cont p {
+    color: var(--Cyan);
+}
+
+.container .card .med-card .text2 .cont2 p {
+    color: var(--Soft-blue);
+}
+
+.container .card .line {
+    height: 1px;
+    width: 90%;
+    margin: 20px auto;
+    background-color: var(--Very-dark-blue-line);
+}
+
+.container .card .bot-card {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin: 3px 0px 20px 30px;
+
+}
+
+.container .card .bot-card img {
+    width: 40px;
+    border-radius: 50%;
+    border: 1px white solid;
+}
+
+.container .card .bot-card p {
+    font-size: 18px;
+    font-weight: 400;
+    margin-left: 18px;
+    color: var(--Soft-blue);
+}
+
+.container .card .bot-card p span {
+    color: var(--White);
+    cursor: pointer;
+}
+
+.container .card .bot-card p span:hover {
+    color: var(--Cyan);
+}
+/* start info bar */
+.attribution {
+    font-family: 'Inter', sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    text-align: center;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color: whitesmoke;
+}
+
+@media (max-width: 650px) {
+    .attribution {
+        font-size: 11px;
+    }
+}
+
+.attribution a {
+    color: hsl(187, 84%, 48%);
+}
+
+/* end info bar */
